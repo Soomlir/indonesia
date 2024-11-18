@@ -3,6 +3,7 @@
 Учебный проект Explore indonesia
 
 Используемые технологии:
+
 - Vue 3 (composition API)
 - Vite
 - Sass

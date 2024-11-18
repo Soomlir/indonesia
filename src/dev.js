@@ -3,7 +3,7 @@
 import loadPixelperfect from "pixelperfect-tool";
 
 loadPixelperfect({
-  breakpoints: [320, 768, 1280],
+  breakpoints: [375, 1920],
   ext: "png",
   folder: "/pixelperfect",
 });
