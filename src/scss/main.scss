@@ -1,7 +1,72 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "DMSans";
+  font-display: swap;
+  src:
+    local("DMSans"),
+    url("../../fonts/DMSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "DMSans";
+  font-display: swap;
+  src:
+    local("DMSans"),
+    url("../../fonts/DMSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto";
+  font-display: swap;
+  src:
+    local("Roboto"),
+    url("../../fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Roboto";
+  font-display: swap;
+  src:
+    local("Roboto"),
+    url("../../fonts/Roboto-Bold.woff2") format("woff2");
+}
+
 body {
   min-width: 375px;
   margin: 0;
+  font-family: "DMSans", "Arial", sans-serif;
 
   // Вставляет иконку src/icons/search.svg в CSS
   // --icon-search: url("../icons/search.svg");
+  --icon-play: url("../icons/play-arrow.svg");
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 315px;
+  padding: 16px 36px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: "DMSans", "Arial", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: $white-color;
+  background-color: $main-red;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
 }
