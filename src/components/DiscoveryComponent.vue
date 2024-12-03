@@ -1,54 +1,54 @@
 <script></script>
 
 <template>
-  <section class="discovery">
-    <h2 class="visually-hidden">Discovery</h2>
-    <ul class="discovery__list">
-      <li class="discovery__item">
-        <img
-          class="discovery__img"
-          src="/images/view-1.png"
-          width="314"
-          height="232"
-          alt="Прекрасный вид 1."
-        />
-        <div class="discovery__wrap">
-          <h3 class="discovery__heading">
-            The walkways of Indonesia spellbind
-          </h3>
-          <p class="discovery__text">
-            Lorem ipsum dolor sit amet, conse
-            <br class="mobile" />
-            ctetur adip
-            <br class="desktop" />
-            iscing elit. Fusce commodo magna et libero
-            <br class="desktop" />
-            mollis rhoncus.
-          </p>
-          <button class="discovery__button button">Learn More</button>
-        </div>
-      </li>
-      <li class="discovery__item">
-        <img
-          class="discovery__img discovery__img--another"
-          src="/images/view-2.png"
-          width="314"
-          height="224"
-          alt="Прекрасный вид 2."
-        />
-        <div class="discovery__wrap discovery__wrap--another">
-          <h3 class="discovery__heading discovery__heading--another">
-            Perfect beaches exude relaxation and fun
-          </h3>
-          <p class="discovery__text discovery__text--another">
-            Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
-            commodo magna et libero mollis rhoncus.
-          </p>
-          <button class="discovery__button button">Learn More</button>
-        </div>
-      </li>
-    </ul>
-  </section>
+	<section class="discovery">
+		<h2 class="visually-hidden">Discovery</h2>
+		<ul class="discovery__list">
+			<li class="discovery__item">
+				<img
+					class="discovery__img"
+					src="/images/view-1.png"
+					width="314"
+					height="232"
+					alt="Прекрасный вид 1."
+				/>
+				<div class="discovery__wrap">
+					<h3 class="discovery__heading">
+						The walkways of Indonesia spellbind
+					</h3>
+					<p class="discovery__text">
+						Lorem ipsum dolor sit amet, conse
+						<br class="mobile" />
+						ctetur adip
+						<br class="desktop" />
+						iscing elit. Fusce commodo magna et libero
+						<br class="desktop" />
+						mollis rhoncus.
+					</p>
+					<button class="discovery__button button">Learn More</button>
+				</div>
+			</li>
+			<li class="discovery__item">
+				<img
+					class="discovery__img discovery__img--another"
+					src="/images/view-2.png"
+					width="314"
+					height="224"
+					alt="Прекрасный вид 2."
+				/>
+				<div class="discovery__wrap discovery__wrap--another">
+					<h3 class="discovery__heading discovery__heading--another">
+						Perfect beaches exude relaxation and fun
+					</h3>
+					<p class="discovery__text discovery__text--another">
+						Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
+						commodo magna et libero mollis rhoncus.
+					</p>
+					<button class="discovery__button button">Learn More</button>
+				</div>
+			</li>
+		</ul>
+	</section>
 </template>
 
 <style lang="scss" scoped>

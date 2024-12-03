@@ -1,18 +1,18 @@
 <script setup></script>
 
 <template>
-  <section class="map">
-    <h2 class="map__heading">
-      Our hills and valleys are like nothing you’ve seen.
-    </h2>
-    <p class="map__text">
-      Lorem ipsum dolor sit amet,
-      <br />
-      consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor
-      sit amet, laoreet elit. Donec mauris tortor, elementum sed.
-    </p>
-    <button class="map__button button">Learn More</button>
-  </section>
+	<section class="map">
+		<h2 class="map__heading">
+			Our hills and valleys are like nothing you’ve seen.
+		</h2>
+		<p class="map__text">
+			Lorem ipsum dolor sit amet,
+			<br />
+			consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor
+			sit amet, laoreet elit. Donec mauris tortor, elementum sed.
+		</p>
+		<button class="map__button button">Learn More</button>
+	</section>
 </template>
 
 <style lang="scss" scoped>

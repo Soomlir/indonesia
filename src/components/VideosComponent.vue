@@ -1,64 +1,64 @@
 <script setup></script>
 
 <template>
-  <section class="videos">
-    <h2 class="videos__heading">
-      Live a life like you wouldn’t imagine, experience a life you wouldn’t
-      expect.
-    </h2>
-    <div class="videos__video">
-      <img
-        class="videos__bg"
-        src="/images/video-bg-1.jpg"
-        width="314"
-        height="192"
-        alt="Обложка видео."
-      />
-      <button class="videos__play-button videos__play-button--another">
-        <span class="visually-hidden">Проиграть видео.</span>
-      </button>
-    </div>
-    <ul class="videos__list">
-      <li class="videos__item">
-        <div class="video-play">
-          <img
-            class="videos__bg"
-            src="/images/video-bg-2.jpg"
-            width="314"
-            height="176"
-            alt="Обложка видео."
-          />
-          <button class="video-play__button">
-            <span class="visually-hidden">Проиграть видео.</span>
-          </button>
-        </div>
-        <h2 class="videos__title">In The Country</h2>
-        <p class="videos__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          dapibus mauris in lectus tempus.
-        </p>
-      </li>
-      <li class="videos__item">
-        <div class="video-play">
-          <img
-            class="videos__bg videos__bg--another"
-            src="/images/video-bg-3.jpg"
-            width="314"
-            height="176"
-            alt="Обложка видео."
-          />
-          <button class="video-play__button">
-            <span class="visually-hidden">Проиграть видео.</span>
-          </button>
-        </div>
-        <h2 class="videos__title">In The City</h2>
-        <p class="videos__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          dapibus mauris in.
-        </p>
-      </li>
-    </ul>
-  </section>
+	<section class="videos">
+		<h2 class="videos__heading">
+			Live a life like you wouldn’t imagine, experience a life you wouldn’t
+			expect.
+		</h2>
+		<div class="videos__video">
+			<img
+				class="videos__bg"
+				src="/images/video-bg-1.jpg"
+				width="314"
+				height="192"
+				alt="Обложка видео."
+			/>
+			<button class="videos__play-button videos__play-button--another">
+				<span class="visually-hidden">Проиграть видео.</span>
+			</button>
+		</div>
+		<ul class="videos__list">
+			<li class="videos__item">
+				<div class="video-play">
+					<img
+						class="videos__bg"
+						src="/images/video-bg-2.jpg"
+						width="314"
+						height="176"
+						alt="Обложка видео."
+					/>
+					<button class="video-play__button">
+						<span class="visually-hidden">Проиграть видео.</span>
+					</button>
+				</div>
+				<h2 class="videos__title">In The Country</h2>
+				<p class="videos__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+					dapibus mauris in lectus tempus.
+				</p>
+			</li>
+			<li class="videos__item">
+				<div class="video-play">
+					<img
+						class="videos__bg videos__bg--another"
+						src="/images/video-bg-3.jpg"
+						width="314"
+						height="176"
+						alt="Обложка видео."
+					/>
+					<button class="video-play__button">
+						<span class="visually-hidden">Проиграть видео.</span>
+					</button>
+				</div>
+				<h2 class="videos__title">In The City</h2>
+				<p class="videos__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+					dapibus mauris in.
+				</p>
+			</li>
+		</ul>
+	</section>
 </template>
 
 <style lang="scss" scoped>

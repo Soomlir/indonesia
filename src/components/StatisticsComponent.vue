@@ -3,71 +3,71 @@ import StatsComponent from "./StatsComponent.vue";
 </script>
 
 <template>
-  <div class="statistics">
-    <section class="explore">
-      <h2 class="explore__heading">Explore Our Secrets</h2>
-      <div class="explore__slider slider">
-        <ul class="slider__list">
-          <li class="slider__item slider__item--current">
-            <img
-              class="slider__img"
-              src="/images/slider-img-1.jpg"
-              alt="Картинка слайдера 1."
-              width="314"
-              height="200"
-            />
-          </li>
-          <li class="slider__item">
-            <img
-              class="slider__img"
-              src="/images/slider-img-2.jpg"
-              alt="Картинка слайдера 2."
-              width="405"
-              height="257"
-            />
-          </li>
-          <li class="slider__item">
-            <img
-              class="slider__img"
-              src="/images/slider-img-3.jpg"
-              alt="Картинка слайдера 3."
-              width="405"
-              height="257"
-            />
-          </li>
-        </ul>
-        <div class="slider__controls">
-          <button class="slider__control" type="radio" name="slide">
-            <span class="visually-hidden">Включить слайд 1.</span>
-          </button>
-          <button class="slider__control" type="radio" name="slide">
-            <span class="visually-hidden">Включить слайд 2.</span>
-          </button>
-          <button class="slider__control" type="radio" name="slide">
-            <span class="visually-hidden">Включить слайд 3.</span>
-          </button>
-          <button
-            class="slider__control slider__control--current"
-            type="radio"
-            name="slide"
-          >
-            <span class="visually-hidden">Включить слайд 4.</span>
-          </button>
-          <button class="slider__control" type="radio" name="slide">
-            <span class="visually-hidden">Включить слайд 5.</span>
-          </button>
-        </div>
-        <button class="slider__prev">
-          <span class="visually-hidden">Предыдущий слайд.</span>
-        </button>
-        <button class="slider__next">
-          <span class="visually-hidden">Следующий слайд.</span>
-        </button>
-      </div>
-    </section>
+	<div class="statistics">
+		<section class="explore">
+			<h2 class="explore__heading">Explore Our Secrets</h2>
+			<div class="explore__slider slider">
+				<ul class="slider__list">
+					<li class="slider__item slider__item--current">
+						<img
+							class="slider__img"
+							src="/images/slider-img-1.jpg"
+							alt="Картинка слайдера 1."
+							width="314"
+							height="200"
+						/>
+					</li>
+					<li class="slider__item">
+						<img
+							class="slider__img"
+							src="/images/slider-img-2.jpg"
+							alt="Картинка слайдера 2."
+							width="405"
+							height="257"
+						/>
+					</li>
+					<li class="slider__item">
+						<img
+							class="slider__img"
+							src="/images/slider-img-3.jpg"
+							alt="Картинка слайдера 3."
+							width="405"
+							height="257"
+						/>
+					</li>
+				</ul>
+				<div class="slider__controls">
+					<button class="slider__control" type="radio" name="slide">
+						<span class="visually-hidden">Включить слайд 1.</span>
+					</button>
+					<button class="slider__control" type="radio" name="slide">
+						<span class="visually-hidden">Включить слайд 2.</span>
+					</button>
+					<button class="slider__control" type="radio" name="slide">
+						<span class="visually-hidden">Включить слайд 3.</span>
+					</button>
+					<button
+						class="slider__control slider__control--current"
+						type="radio"
+						name="slide"
+					>
+						<span class="visually-hidden">Включить слайд 4.</span>
+					</button>
+					<button class="slider__control" type="radio" name="slide">
+						<span class="visually-hidden">Включить слайд 5.</span>
+					</button>
+				</div>
+				<button class="slider__prev">
+					<span class="visually-hidden">Предыдущий слайд.</span>
+				</button>
+				<button class="slider__next">
+					<span class="visually-hidden">Следующий слайд.</span>
+				</button>
+			</div>
+		</section>
 
-    <StatsComponent />
-  </div>
+		<stats-component />
+	</div>
 </template>
 
 <style lang="scss" scoped>

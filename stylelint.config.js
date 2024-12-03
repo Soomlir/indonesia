@@ -18,7 +18,6 @@ export default {
   rules: {
     "alpha-value-notation": "number",
     "at-rule-empty-line-before": null,
-    "media-query-no-invalid": null,
     "at-rule-no-unknown": [
       true,
       {
@@ -45,6 +44,7 @@ export default {
     "font-family-name-quotes": "always-unless-keyword",
     "import-notation": "string",
     "media-feature-range-notation": "prefix",
+    "media-query-no-invalid": null,
     "order/properties-order": [
       {
         properties: [

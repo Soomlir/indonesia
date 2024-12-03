@@ -1,12 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="promo__preview preview">
-    <img src="/images/video-preview-bg.jpg" alt="Фон видео." />
-    <button class="preview__play">
-      <span class="visually-hidden">Проиграть видео.</span>
-    </button>
-  </div>
+	<div class="promo__preview preview">
+		<img src="/images/video-preview-bg.jpg" alt="Фон видео." />
+		<button class="preview__play">
+			<span class="visually-hidden">Проиграть видео.</span>
+		</button>
+	</div>
 </template>
 
 <style lang="scss" scoped>

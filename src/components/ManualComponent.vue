@@ -1,70 +1,70 @@
 <script setup></script>
 
 <template>
-  <section class="manual">
-    <h2 class="manual__heading">Getting there</h2>
-    <ol class="manual__list">
-      <li class="manual__item">
-        <h3 class="manual__title">Bookings your flights</h3>
-        <div class="manual__wrap">
-          <p class="manual__text">Lorem ipsum dolor set,,,,</p>
-          <a class="manual__link" href="#!">Show more</a>
-        </div>
-        <p class="manual__text-desktop">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed
-          euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt,
-          viverra neque auctor, lobortis enim.
-        </p>
-      </li>
-      <li class="manual__item">
-        <h3 class="manual__title">Choosing your hotel</h3>
-        <div class="manual__wrap">
-          <p class="manual__text">Lorem ipsum dolor set,,,,</p>
-          <a class="manual__link" href="#!">Show more</a>
-        </div>
-        <p class="manual__text-desktop manual__text-desktop--another">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed
-          euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt,
-          viverra neque auctor, lobortis enim.
-        </p>
-        <div class="manual__video">
-          <img
-            class="manual__image"
-            src="/images/manual-video-1.jpg"
-            alt="обложка видео."
-          />
-          <button class="manual__play">
-            <span class="visually-hidden">Запустить видео.</span>
-          </button>
-          <div class="manual__video-text">
-            <h4>Travelling there</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              dapibus mauris in lectus tempus, eget tincidunt.
-            </p>
-          </div>
-        </div>
-        <div class="manual__wrap">
-          <p class="manual__text">Lorem ipsum dolor set,,,,</p>
-          <a class="manual__link" href="#!">Show more</a>
-        </div>
-      </li>
-      <li class="manual__item">
-        <h3 class="manual__title">Planning your experiences</h3>
-        <div class="manual__wrap">
-          <p class="manual__text">Lorem ipsum dolor set,,,,</p>
-          <a class="manual__link" href="#!">Show more</a>
-        </div>
-        <p class="manual__text-desktop">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          dapibus mauris in lectus tempus, eget tincidunt lacus varius.
-        </p>
-      </li>
-    </ol>
-    <button class="manual__button button">Learn more</button>
-  </section>
+	<section class="manual">
+		<h2 class="manual__heading">Getting there</h2>
+		<ol class="manual__list">
+			<li class="manual__item">
+				<h3 class="manual__title">Bookings your flights</h3>
+				<div class="manual__wrap">
+					<p class="manual__text">Lorem ipsum dolor set,,,,</p>
+					<a class="manual__link" href="#!">Show more</a>
+				</div>
+				<p class="manual__text-desktop">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+					dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed
+					euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt,
+					viverra neque auctor, lobortis enim.
+				</p>
+			</li>
+			<li class="manual__item">
+				<h3 class="manual__title">Choosing your hotel</h3>
+				<div class="manual__wrap">
+					<p class="manual__text">Lorem ipsum dolor set,,,,</p>
+					<a class="manual__link" href="#!">Show more</a>
+				</div>
+				<p class="manual__text-desktop manual__text-desktop--another">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+					dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed
+					euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt,
+					viverra neque auctor, lobortis enim.
+				</p>
+				<div class="manual__video">
+					<img
+						class="manual__image"
+						src="/images/manual-video-1.jpg"
+						alt="обложка видео."
+					/>
+					<button class="manual__play">
+						<span class="visually-hidden">Запустить видео.</span>
+					</button>
+					<div class="manual__video-text">
+						<h4>Travelling there</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							dapibus mauris in lectus tempus, eget tincidunt.
+						</p>
+					</div>
+				</div>
+				<div class="manual__wrap">
+					<p class="manual__text">Lorem ipsum dolor set,,,,</p>
+					<a class="manual__link" href="#!">Show more</a>
+				</div>
+			</li>
+			<li class="manual__item">
+				<h3 class="manual__title">Planning your experiences</h3>
+				<div class="manual__wrap">
+					<p class="manual__text">Lorem ipsum dolor set,,,,</p>
+					<a class="manual__link" href="#!">Show more</a>
+				</div>
+				<p class="manual__text-desktop">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+					dapibus mauris in lectus tempus, eget tincidunt lacus varius.
+				</p>
+			</li>
+		</ol>
+		<button class="manual__button button">Learn more</button>
+	</section>
 </template>
 
 <style scoped lang="scss">
