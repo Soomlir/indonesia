@@ -5,7 +5,7 @@
   font-display: swap;
   src:
     local("DMSans"),
-    url("../../fonts/DMSans-Regular.woff2") format("woff2");
+    url("/fonts/DMSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-display: swap;
   src:
     local("DMSans"),
-    url("../../fonts/DMSans-Bold.woff2") format("woff2");
+    url("/fonts/DMSans-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -25,7 +25,7 @@
   font-display: swap;
   src:
     local("Roboto"),
-    url("../../fonts/Roboto-Regular.woff2") format("woff2");
+    url("/fonts/Roboto-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -35,7 +35,17 @@
   font-display: swap;
   src:
     local("Roboto"),
-    url("../../fonts/Roboto-Bold.woff2") format("woff2");
+    url("/fonts/Roboto-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Roboto";
+  font-display: swap;
+  src:
+    local("Roboto"),
+    url("/fonts/Roboto-Black.woff2") format("woff2");
 }
 
 body {
@@ -46,6 +56,12 @@ body {
   // Вставляет иконку src/icons/search.svg в CSS
   // --icon-search: url("../icons/search.svg");
   --icon-play: url("../icons/play-arrow.svg");
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {

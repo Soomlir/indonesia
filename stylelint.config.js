@@ -18,6 +18,7 @@ export default {
   rules: {
     "alpha-value-notation": "number",
     "at-rule-empty-line-before": null,
+    "media-query-no-invalid": null,
     "at-rule-no-unknown": [
       true,
       {

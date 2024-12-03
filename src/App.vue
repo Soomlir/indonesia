@@ -1,21 +1,28 @@
 <script setup>
+import DiscoveryComponent from "@/components/DiscoveryComponent.vue";
+import StatisticsComponent from "@/components/StatisticsComponent.vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import PromoComponent from "@/components/PromoComponent.vue";
-import DiscoveryComponent from "@/components/DiscoveryComponent.vue";
-import ExploreComponent from "@/components/ExploreComponent.vue";
-import StatsComponent from "@/components/StatsComponent.vue";
+import MapComponent from "@/components/MapComponent.vue";
+import VideosComponent from "./components/VideosComponent.vue";
+import GalleryComponent from "./components/GalleryComponent.vue";
+import ManualComponent from "./components/ManualComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 </script>
 
 <template>
   <div class="page">
     <header-component class="page__header" />
     <main>
-      <PromoComponent class="page__promo" />
-      <DiscoveryComponent class="page__discovery" />
-      <ExploreComponent class="page__explore" />
-      <StatsComponent class="page__stats" />
+      <promo-component class="page__promo" />
+      <discovery-component class="page__discovery" />
+      <statistics-component class="page__statistics" />
+      <map-component class="page__map" />
+      <videos-component class="page__videos" />
+      <gallery-component class="page__gallery" />
+      <manual-component class="page__manual" />
     </main>
-    <footer>footer</footer>
+    <footer-component class="page__footer" />
   </div>
 </template>
 

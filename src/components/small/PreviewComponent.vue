@@ -12,14 +12,15 @@
 <style lang="scss" scoped>
 .preview {
   position: relative;
+  display: flex;
 }
 
 .preview__play {
   position: absolute;
-  top: 66px;
-  left: 128px;
+  inset: 0;
   width: 59px;
   height: 59px;
+  margin: auto;
   background: none;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -31,11 +32,16 @@
   &::before {
     content: "";
     position: absolute;
-    top: 12px;
-    left: 12px;
+    inset: 0;
     width: 32px;
     height: 32px;
+    margin: auto;
     background-image: var(--icon-play);
+  }
+
+  @media (min-width: 1920px) {
+    width: 79px;
+    height: 79px;
   }
 }
 </style>
