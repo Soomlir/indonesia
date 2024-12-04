@@ -1,4 +1,57 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const imagesList = ref([
+  {
+    alt: "",
+    className: "images__image--1",
+    height: 217,
+    id: 1,
+    src: "/images/gallery-1.jpg",
+    width: 151,
+  },
+  {
+    alt: "",
+    className: "images__image--2",
+    height: 86,
+    id: 2,
+    src: "/images/gallery-2.jpg",
+    width: 151,
+  },
+  {
+    alt: "",
+    className: "images__image--3",
+    height: 86,
+    id: 3,
+    src: "/images/gallery-3.jpg",
+    width: 151,
+  },
+  {
+    alt: "",
+    className: "images__image--4",
+    height: 217,
+    id: 4,
+    src: "/images/gallery-4.jpg",
+    width: 151,
+  },
+  {
+    alt: "",
+    className: "images__image--5",
+    height: 153,
+    id: 5,
+    src: "/images/gallery-5.jpg",
+    width: 150,
+  },
+  {
+    alt: "",
+    className: "images__image--6",
+    height: 153,
+    id: 5,
+    src: "/images/gallery-6.jpg",
+    width: 150,
+  },
+]);
+</script>
 
 <template>
 	<section class="gallery">
@@ -10,58 +63,13 @@
 			eget tincidunt.
 		</p>
 		<div class="gallery__images images">
-			<a href="#!">
+			<a href="#!" v-for="element in imagesList" :key="element.id">
 				<img
-					class="images__image--1"
-					src="/images/gallery-1.jpg"
-					width="151"
-					height="217"
-					alt=""
-				/>
-			</a>
-			<a href="#!">
-				<img
-					class="images__image--2"
-					src="/images/gallery-2.jpg"
-					width="151"
-					height="86"
-					alt=""
-				/>
-			</a>
-			<a href="#!">
-				<img
-					class="images__image--3"
-					src="/images/gallery-3.jpg"
-					width="151"
-					height="86"
-					alt=""
-				/>
-			</a>
-			<a href="#!">
-				<img
-					class="images__image--4"
-					src="/images/gallery-4.jpg"
-					width="151"
-					height="217"
-					alt=""
-				/>
-			</a>
-			<a href="#!">
-				<img
-					class="images__image--5"
-					src="/images/gallery-5.jpg"
-					width="150"
-					height="153"
-					alt=""
-				/>
-			</a>
-			<a href="#!">
-				<img
-					class="images__image--6"
-					src="/images/gallery-6.jpg"
-					width="150"
-					height="153"
-					alt=""
+					:class="element.className"
+					:src="element.src"
+					:width="element.width"
+					:height="element.height"
+					:alt="element.alt"
 				/>
 			</a>
 		</div>
