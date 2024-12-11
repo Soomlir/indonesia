@@ -1,27 +1,28 @@
 <script setup>
-import StatsComponent from "./StatsComponent.vue";
 import { ref } from "vue";
+
+import StatsComponent from "./StatsComponent.vue";
 const sliderImages = ref([
   {
-    id: 1,
-    src: "/images/slider-img-1.jpg",
     alt: "Картинка слайдера 1.",
-    width: 314,
     height: 200,
+    id: 1,
+    src: "images/slider-img-1.jpg",
+    width: 314,
   },
   {
-    id: 2,
-    src: "/images/slider-img-2.jpg",
     alt: "Картинка слайдера 2.",
-    width: 405,
     height: 257,
+    id: 2,
+    src: "images/slider-img-2.jpg",
+    width: 405,
   },
   {
-    id: 3,
-    src: "/images/slider-img-3.jpg",
     alt: "Картинка слайдера 3.",
-    width: 405,
     height: 257,
+    id: 3,
+    src: "images/slider-img-3.jpg",
+    width: 405,
   },
 ]);
 </script>

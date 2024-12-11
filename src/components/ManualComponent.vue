@@ -2,34 +2,34 @@
 import { ref } from "vue";
 const manualList = ref([
   {
-    id: 1,
+    another: false,
     heading: "Bookings your flights",
-    text: "Lorem ipsum dolor set,,,,",
+    id: 1,
     longText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
 					dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed
 					euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt,
 					viverra neque auctor, lobortis enim.`,
-    another: false,
+    text: "Lorem ipsum dolor set,,,,",
     video: false,
   },
   {
-    id: 2,
+    another: true,
     heading: "Choosing your hotel",
-    text: "Lorem ipsum dolor set,,,,",
+    id: 2,
     longText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed
           euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt,
           viverra neque auctor, lobortis enim.`,
-    another: true,
+    text: "Lorem ipsum dolor set,,,,",
     video: true,
   },
   {
-    id: 3,
+    another: false,
     heading: "Planning your experiences",
-    text: "Lorem ipsum dolor set,,,,",
+    id: 3,
     longText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           dapibus mauris in lectus tempus, eget tincidunt lacus varius.`,
-    another: false,
+    text: "Lorem ipsum dolor set,,,,",
     video: false,
   },
 ]);
@@ -37,46 +37,46 @@ const blockVideo = ref(false);
 </script>
 
 <template>
-  <section class="manual">
-    <h2 class="manual__heading">Getting there</h2>
-    <ol class="manual__list">
-      <li class="manual__item" v-for="item in manualList" :key="item.id">
-        <h3 class="manual__title">{{ item.heading }}</h3>
-        <div class="manual__wrap">
-          <p class="manual__text">{{ item.text }}</p>
-          <a class="manual__link" href="#!">Show more</a>
-        </div>
-        <p
-          class="manual__text-desktop"
-          :class="{ 'manual__text-desktop--another': item.another }"
-        >
-          {{ item.longText }}
-        </p>
-        <div class="manual__video" v-if="item.video">
-          <img
-            class="manual__image"
-            src="/images/manual-video-1.jpg"
-            alt="обложка видео."
-          />
-          <button class="manual__play">
-            <span class="visually-hidden">Запустить видео.</span>
-          </button>
-          <div class="manual__video-text" v-if="item.video">
-            <h4>Travelling there</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              dapibus mauris in lectus tempus, eget tincidunt.
-            </p>
-          </div>
-        </div>
-        <div class="manual__wrap" v-if="item.video">
-          <p class="manual__text">Lorem ipsum dolor set,,,,</p>
-          <a class="manual__link" href="#!">Show more</a>
-        </div>
-      </li>
-    </ol>
-    <button class="manual__button button">Learn more</button>
-  </section>
+	<section class="manual">
+		<h2 class="manual__heading">Getting there</h2>
+		<ol class="manual__list">
+			<li class="manual__item" v-for="item in manualList" :key="item.id">
+				<h3 class="manual__title">{{ item.heading }}</h3>
+				<div class="manual__wrap">
+					<p class="manual__text">{{ item.text }}</p>
+					<a class="manual__link" href="#!">Show more</a>
+				</div>
+				<p
+					class="manual__text-desktop"
+					:class="{ 'manual__text-desktop--another': item.another }"
+				>
+					{{ item.longText }}
+				</p>
+				<div class="manual__video" v-if="item.video">
+					<img
+						class="manual__image"
+						src="/images/manual-video-1.jpg"
+						alt="обложка видео."
+					/>
+					<button class="manual__play">
+						<span class="visually-hidden">Запустить видео.</span>
+					</button>
+					<div class="manual__video-text" v-if="item.video">
+						<h4>Travelling there</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							dapibus mauris in lectus tempus, eget tincidunt.
+						</p>
+					</div>
+				</div>
+				<div class="manual__wrap" v-if="item.video">
+					<p class="manual__text">Lorem ipsum dolor set,,,,</p>
+					<a class="manual__link" href="#!">Show more</a>
+				</div>
+			</li>
+		</ol>
+		<button class="manual__button button">Learn more</button>
+	</section>
 </template>
 
 <style scoped lang="scss">

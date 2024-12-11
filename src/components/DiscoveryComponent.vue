@@ -2,14 +2,14 @@
 import { ref } from "vue";
 const discoveryList = ref([
   {
+    heading: "The walkways of Indonesia spellbind",
     id: 1,
     img: {
-      src: "/images/view-1.png",
-      width: 314,
-      height: 232,
       alt: "Прекрасный вид 1.",
+      height: 232,
+      src: "images/view-1.png",
+      width: 314,
     },
-    heading: "The walkways of Indonesia spellbind",
     text: `Lorem ipsum dolor sit amet, conse
             <br class="mobile" />
             ctetur adip
@@ -19,14 +19,14 @@ const discoveryList = ref([
             mollis rhoncus.`,
   },
   {
+    heading: "Perfect beaches exude relaxation and fun",
     id: 2,
     img: {
-      src: "/images/view-2.png",
-      width: 314,
-      height: 224,
       alt: "Прекрасный вид 2.",
+      height: 224,
+      src: "images/view-2.png",
+      width: 314,
     },
-    heading: "Perfect beaches exude relaxation and fun",
     text: `Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
         commodo magna et libero mollis rhoncus.`,
   },
