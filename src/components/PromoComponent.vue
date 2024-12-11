@@ -22,39 +22,43 @@ const promoList = ref([
     title: "Title here",
   },
 ]);
+
+const promoSocial = ref([
+  { id: 1, text: "Tw" },
+  { id: 2, text: "In" },
+  { id: 3, text: "Fb" },
+]);
 </script>
 
 <template>
-	<section class="promo">
-		<heading-component class="promo__heading">
-			explore indonesia
-		</heading-component>
-		<link-component class="promo__button">Start travelling</link-component>
-		<div class="promo__number">
-			<span>01</span>
-			<div class="promo__progress">
-				<div></div>
-			</div>
-		</div>
-		<ul class="promo__social">
-			<li>Tw</li>
-			<li>In</li>
-			<li>Fb</li>
-		</ul>
-		<div class="promo__wrap-list">
-			<ol class="promo__list promo-list">
-				<li
-					class="promo-list__item"
-					v-for="listItem of promoList"
-					:key="listItem.id"
-				>
-					<h2 class="promo-list__title">{{ listItem.title }}</h2>
-					<p class="promo-list__text">{{ listItem.text }}</p>
-				</li>
-			</ol>
-			<preview-component />
-		</div>
-	</section>
+  <section class="promo">
+    <heading-component class="promo__heading">
+      explore indonesia
+    </heading-component>
+    <link-component class="promo__button">Start travelling</link-component>
+    <div class="promo__number">
+      <span>01</span>
+      <div class="promo__progress">
+        <div></div>
+      </div>
+    </div>
+    <ul class="promo__social">
+      <li v-for="item in promoSocial" :key="item.id">{{ item.text }}</li>
+    </ul>
+    <div class="promo__wrap-list">
+      <ol class="promo__list promo-list">
+        <li
+          class="promo-list__item"
+          v-for="listItem of promoList"
+          :key="listItem.id"
+        >
+          <h2 class="promo-list__title">{{ listItem.title }}</h2>
+          <p class="promo-list__text">{{ listItem.text }}</p>
+        </li>
+      </ol>
+      <preview-component />
+    </div>
+  </section>
 </template>
 
 <style scopeed lang="scss">

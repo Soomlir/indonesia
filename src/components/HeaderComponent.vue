@@ -1,40 +1,39 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const headerLinks = ref([
+  { id: 1, text: "destinations" },
+  { id: 2, text: "experiences" },
+  { id: 3, text: "about" },
+  { id: 4, text: "gallery" },
+]);
+</script>
 
 <template>
-	<header class="header">
-		<a class="header__logo logo" href="#!">
-			<picture>
-				<source
-					srcset="/images/logo-desktop.svg"
-					media="(min-width: 1800px)"
-					height="69"
-				/>
-				<img src="/images/logo-mobile.svg" alt="Logo Indonesia." />
-			</picture>
-		</a>
-		<ul class="header__list">
-			<li class="header__item">
-				<a class="header__link" href="#!">destinations</a>
-			</li>
-			<li class="header__item">
-				<a class="header__link" href="#!">experiences</a>
-			</li>
-			<li class="header__item">
-				<a class="header__link" href="#!">about</a>
-			</li>
-			<li class="header__item">
-				<a class="header__link" href="#!">gallery</a>
-			</li>
-		</ul>
-		<div class="header__nav-wrap">
-			<a class="header__search search" href="#!">
-				<span class="visually-hidden">Открыть поиск.</span>
-			</a>
-			<a class="header__menu menu" href="#!">
-				<span class="visually-hidden">Открыть меню.</span>
-			</a>
-		</div>
-	</header>
+  <header class="header">
+    <a class="header__logo logo" href="#!">
+      <picture>
+        <source
+          srcset="/images/logo-desktop.svg"
+          media="(min-width: 1800px)"
+          height="69"
+        />
+        <img src="/images/logo-mobile.svg" alt="Logo Indonesia." />
+      </picture>
+    </a>
+    <ul class="header__list">
+      <li class="header__item" v-for="item in headerLinks" :key="item.id">
+        <a class="header__link" href="#!">{{ item.text }}</a>
+      </li>
+    </ul>
+    <div class="header__nav-wrap">
+      <a class="header__search search" href="#!">
+        <span class="visually-hidden">Открыть поиск.</span>
+      </a>
+      <a class="header__menu menu" href="#!">
+        <span class="visually-hidden">Открыть меню.</span>
+      </a>
+    </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>

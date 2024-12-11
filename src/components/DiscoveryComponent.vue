@@ -1,54 +1,64 @@
-<script></script>
+<script setup>
+import { ref } from "vue";
+const discoveryList = ref([
+  {
+    id: 1,
+    img: {
+      src: "/images/view-1.png",
+      width: 314,
+      height: 232,
+      alt: "Прекрасный вид 1.",
+    },
+    heading: "The walkways of Indonesia spellbind",
+    text: `Lorem ipsum dolor sit amet, conse
+            <br class="mobile" />
+            ctetur adip
+            <br class="desktop" />
+            iscing elit. Fusce commodo magna et libero
+            <br class="desktop" />
+            mollis rhoncus.`,
+  },
+  {
+    id: 2,
+    img: {
+      src: "/images/view-2.png",
+      width: 314,
+      height: 224,
+      alt: "Прекрасный вид 2.",
+    },
+    heading: "Perfect beaches exude relaxation and fun",
+    text: `Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
+        commodo magna et libero mollis rhoncus.`,
+  },
+]);
+</script>
 
 <template>
-	<section class="discovery">
-		<h2 class="visually-hidden">Discovery</h2>
-		<ul class="discovery__list">
-			<li class="discovery__item">
-				<img
-					class="discovery__img"
-					src="/images/view-1.png"
-					width="314"
-					height="232"
-					alt="Прекрасный вид 1."
-				/>
-				<div class="discovery__wrap">
-					<h3 class="discovery__heading">
-						The walkways of Indonesia spellbind
-					</h3>
-					<p class="discovery__text">
-						Lorem ipsum dolor sit amet, conse
-						<br class="mobile" />
-						ctetur adip
-						<br class="desktop" />
-						iscing elit. Fusce commodo magna et libero
-						<br class="desktop" />
-						mollis rhoncus.
-					</p>
-					<button class="discovery__button button">Learn More</button>
-				</div>
-			</li>
-			<li class="discovery__item">
-				<img
-					class="discovery__img discovery__img--another"
-					src="/images/view-2.png"
-					width="314"
-					height="224"
-					alt="Прекрасный вид 2."
-				/>
-				<div class="discovery__wrap discovery__wrap--another">
-					<h3 class="discovery__heading discovery__heading--another">
-						Perfect beaches exude relaxation and fun
-					</h3>
-					<p class="discovery__text discovery__text--another">
-						Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
-						commodo magna et libero mollis rhoncus.
-					</p>
-					<button class="discovery__button button">Learn More</button>
-				</div>
-			</li>
-		</ul>
-	</section>
+  <section class="discovery">
+    <h2 class="visually-hidden">Discovery</h2>
+    <ul class="discovery__list">
+      <li
+        v-for="{ id, img, heading, text } in discoveryList"
+        :key="id"
+        class="discovery__item"
+      >
+        <img
+          class="discovery__img"
+          :src="img.src"
+          :width="img.width"
+          :height="img.height"
+          :alt="img.alt"
+        />
+        <div class="discovery__wrap">
+          <h3 class="discovery__heading">
+            {{ heading }}
+          </h3>
+          <p class="discovery__text" v-html="text"></p>
+          <a href="#!" class="discovery__button button">Learn more</a>
+        </div>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -79,16 +89,12 @@
 .discovery__wrap {
   @media (min-width: $desktop-width) {
     width: 480px;
-    margin-left: 50px;
     padding-top: 61px;
-    padding-left: 81px;
 
     &--another {
-      margin-right: 122px;
       margin-left: 0;
       padding: 0;
       padding-top: 67px;
-      padding-left: 47px;
     }
   }
 }
@@ -102,10 +108,12 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    gap: 131px;
     margin-bottom: 163px;
 
     &:last-child {
       margin-bottom: 0;
+      padding-left: 38px;
     }
 
     &:last-child img {

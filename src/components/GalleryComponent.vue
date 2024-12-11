@@ -54,26 +54,26 @@ const imagesList = ref([
 </script>
 
 <template>
-  <section class="gallery">
-    <h2 class="gallery__heading">Photo Gallery</h2>
-    <p class="gallery__text">
-      Lorem ipsum dolor sit amet,
-      <br />
-      consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus,
-      eget tincidunt.
-    </p>
-    <div class="gallery__images images">
-      <a href="#!" v-for="element in imagesList" :key="element.id">
-        <img
-          :class="element.className"
-          :src="element.src"
-          :width="element.width"
-          :height="element.height"
-          :alt="element.alt"
-        />
-      </a>
-    </div>
-  </section>
+	<section class="gallery">
+		<h2 class="gallery__heading">Photo Gallery</h2>
+		<p class="gallery__text">
+			Lorem ipsum dolor sit amet,
+			<br />
+			consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus,
+			eget tincidunt.
+		</p>
+		<div class="gallery__images images">
+			<a href="#!" v-for="element in imagesList" :key="element.id">
+				<img
+					:class="element.className"
+					:src="element.src"
+					:width="element.width"
+					:height="element.height"
+					:alt="element.alt"
+				/>
+			</a>
+		</div>
+	</section>
 </template>
 
 <style lang="scss" scoped>

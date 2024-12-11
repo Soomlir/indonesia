@@ -1,38 +1,43 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const statsData = ref([
+  {
+    id: 1,
+    number: "100+",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo
+					magna et libero.`,
+  },
+  {
+    id: 2,
+    number: "43,000+",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          commodo.`,
+  },
+  {
+    id: 3,
+    number: "30+",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo
+          magna et libero.`,
+  },
+]);
+</script>
 
 <template>
-	<section class="stats">
-		<h2 class="stats__heading">By The Numbers</h2>
-		<p class="stats__text">
-			Lorem ipsum dolor sit amet,
-			<br />
-			consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum
-			dolor sit amet, consectetur adipiscing elit.
-		</p>
-		<ul class="stats__list">
-			<li class="stats__item">
-				<p class="stats__number">100+</p>
-				<p class="stats__text-list">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo
-					magna et libero.
-				</p>
-			</li>
-			<li class="stats__item">
-				<p class="stats__number">43,000+</p>
-				<p class="stats__text-list">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-					commodo.
-				</p>
-			</li>
-			<li class="stats__item">
-				<p class="stats__number">30+</p>
-				<p class="stats__text-list">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo
-					magna et libero.
-				</p>
-			</li>
-		</ul>
-	</section>
+  <section class="stats">
+    <h2 class="stats__heading">By The Numbers</h2>
+    <p class="stats__text">
+      Lorem ipsum dolor sit amet,
+      <br />
+      consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="stats__list">
+      <li class="stats__item" v-for="item in statsData" :key="item.id">
+        <p class="stats__number">{{ item.number }}</p>
+        <p class="stats__text-list">{{ item.text }}</p>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <style lang="scss" scoped>
